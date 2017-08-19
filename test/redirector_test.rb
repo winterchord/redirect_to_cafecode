@@ -12,11 +12,11 @@ class TestRedirector < Minitest::Test
   end
 
   def test_redirect_to_root_with_campaign
-    assert_equal 'https://cafecode.co/?utm_source=brv&utm_campaign=301-redirects', Redirector.link(redirect_campaign: true)
+    assert_equal 'https://cafecode.co/?utm_source=brv&utm_campaign=redirects-301', Redirector.link(redirect_campaign: true)
   end
 
   def test_redirect_with_url_path_and_campaign
-    assert_equal 'https://cafecode.co/foo/bar?utm_source=brv&utm_campaign=301-redirects', Redirector.link(splat: ['foo/bar'], redirect_campaign: true)
-    assert_equal 'https://cafecode.co/foo/bar.html?utm_source=brv&utm_campaign=301-redirects', Redirector.link(splat: ['foo/bar.html'], redirect_campaign: true)
+    assert_equal 'https://cafecode.co/foo/bar?utm_source=brv&utm_campaign=redirects-301', Redirector.link(splat: ['foo/bar'], redirect_campaign: true)
+    assert_equal 'https://cafecode.co/foo/bar.html?utm_source=brv&utm_campaign=redirects-301', Redirector.link(splat: ['foo/bar.html'], redirect_campaign: true)
   end
 end
