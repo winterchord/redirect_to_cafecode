@@ -1,10 +1,6 @@
 require 'sinatra'
+require_relative 'lib/redirector'
 
 get '/*' do
-  unless params['splat']
-    redirect "http://cafecode.co", 301
-  end
-
-  url_path = params['splat'].join
-  redirect "http://cafecode.co/#{url_path}", 301
+  redirect Redirector.link(splat: params['splat'], redirect_campaign: true), 301
 end
