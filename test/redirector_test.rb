@@ -1,5 +1,4 @@
-require 'minitest/autorun'
-require_relative '../lib/redirector'
+require_relative 'test_helper'
 
 class TestRedirector < Minitest::Test
   def test_redirect_link_to_cafecode_root
