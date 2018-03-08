@@ -1,7 +1,7 @@
 source "https://rubygems.org"
-ruby '2.4.1'
+ruby '2.5.0'
 
-gem 'sinatra', '~> 1.4.7'
+gem 'sinatra', '~> 2.0.1'
 
 group :production do
   gem 'puma', '~> 3.6.0'
