@@ -4,16 +4,16 @@ GEM
     minitest (5.10.3)
     minitest-ci (3.2.0)
       minitest (>= 5.0.6)
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     puma (3.6.0)
-    rack (2.0.4)
-    rack-protection (2.0.1)
+    rack (2.0.6)
+    rack-protection (2.0.4)
       rack
     rake (12.0.0)
-    sinatra (2.0.1)
+    sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.1)
+      rack-protection (= 2.0.4)
       tilt (~> 2.0)
     tilt (2.0.8)
 
@@ -25,10 +25,10 @@ DEPENDENCIES
   minitest-ci (~> 3.2.0)
   puma (~> 3.6.0)
   rake (~> 12.0.0)
-  sinatra (~> 2.0.1)
+  sinatra (>= 2.0.2)
 
 RUBY VERSION
-   ruby 2.5.0p0
+   ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.1
+   1.17.1
