@@ -4,7 +4,7 @@ ruby '2.5.1'
 gem "sinatra", ">= 2.0.2"
 
 group :production do
-  gem 'puma', '~> 3.6.0'
+  gem 'puma', '~> 3.12.0'
 end
 
 group :development do
