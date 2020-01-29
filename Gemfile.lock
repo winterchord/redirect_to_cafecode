@@ -4,18 +4,22 @@ GEM
     minitest (5.10.3)
     minitest-ci (3.2.0)
       minitest (>= 5.0.6)
-    mustermann (1.0.3)
-    puma (3.6.0)
-    rack (2.0.6)
-    rack-protection (2.0.4)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nio4r (2.5.2)
+    puma (4.3.1)
+      nio4r (~> 2.0)
+    rack (2.1.2)
+    rack-protection (2.0.8.1)
       rack
     rake (12.0.0)
-    sinatra (2.0.4)
+    ruby2_keywords (0.0.2)
+    sinatra (2.0.8.1)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.4)
+      rack-protection (= 2.0.8.1)
       tilt (~> 2.0)
-    tilt (2.0.8)
+    tilt (2.0.10)
 
 PLATFORMS
   ruby
@@ -23,12 +27,12 @@ PLATFORMS
 DEPENDENCIES
   minitest (~> 5.10.3)
   minitest-ci (~> 3.2.0)
-  puma (~> 3.6.0)
+  puma (>= 3.12.2)
   rake (~> 12.0.0)
   sinatra (>= 2.0.2)
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 2.7.0p0
 
 BUNDLED WITH
-   1.17.1
+   2.1.4
