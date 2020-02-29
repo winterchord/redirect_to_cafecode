@@ -8,7 +8,7 @@ group :production do
 end
 
 group :development do
-  gem "rake", "~> 12.0.0"
+  gem "rake", "~> 12.3.3"
 end
 
 group :test do
